@@ -14,11 +14,21 @@ async function fetchAPI(word){
         infotextEL.innerText = `Searching the Meaning of "${word}"`;
         const url = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`
         const result = await fetch(url).then((res)=>res.json());
-        infotextEL.style.display = "none";
-        meaningcontEl.style.display = "block";
+        
+        if (result.title){
+            infotextEL.style.display = "none";
+            titleEl.style.display
+            meaningcontEl.style.display = "block";
+            audioEl.style.display = "none";
+        }
+        
+        
+        audioEl.style.display="inline-flex";
         titleEl.innerText= result[0].word;
         meaningEl.innerText= result[0].meanings[0].definitions[0].definition;
+        
         audioEl.src = result[0].phonetics[0].audio;
+        
     } catch (error) {
         console.log(error);
     }
