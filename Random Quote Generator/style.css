@@ -1,0 +1,56 @@
+body{
+    margin:0;
+    /* background: linear-gradient(to left bottom, rgb(156, 0, 73), rgb(223, 70, 253), rgb(218, 255, 210)); */
+    background: url('https://images.unsplash.com/photo-1578429829702-37f6e0f6c44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1031&q=80');
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    color: rgb(246, 255, 207);
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    
+}
+
+.container{
+    /* background-color: rgba(255, 255, 255, 0.205);
+    box-shadow: 0 5px 3px rgba(0,0,0,0.3); */
+    border-radius: 10px;
+    padding: 20px;
+    width: 85%;
+    max-width: 600px;
+    text-align: center;
+    font-size: 15px;
+    font-family: monospace;
+    -webkit-backdrop-filter: blur(8px);  /* Safari 9+ */
+    backdrop-filter: blur(6px); /* Chrome and Opera */
+    box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 15%);
+    background-color: rgba(228, 228, 228, 0.055); 
+}
+
+.button{
+    -webkit-backdrop-filter: blur(8px);  /* Safari 9+ */
+    backdrop-filter: blur(6px); /* Chrome and Opera */
+    box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 15%);
+    background-color: rgba(228, 228, 228, 0.39);
+    border-radius: 9px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-family: monospace;
+    outline: rgba(255, 255, 255, 0.3);
+    border: 0px;
+    color: aliceblue;
+    width: 200px;
+}
+
+.button:hover{
+    background-color: rgba(228, 228, 228, 0.6);
+    box-shadow: 0 4px 4px rgba(0,0,0,0.3);
+    transition: all 1500 ease-in-out;
+    color:rgb(0, 95, 150)
+}
+
+.button:active{
+    transform: translateY(-1px) scale(.95);
+}
