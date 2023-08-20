@@ -1,0 +1,128 @@
+body {
+    /* background: url('https://images.unsplash.com/photo-1474540412665-1cdae210ae6b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1483&q=80'); */
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.container {
+    background-color: rgba(255, 255, 255, 0.205);
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    width: 85%;
+    max-width: 600px;
+    text-align: center;
+    font-size: 25px;
+    font-family: monospace;
+    -webkit-backdrop-filter: blur(8px);
+    /* Safari 9+ */
+    backdrop-filter: blur(6px);
+    /* Chrome and Opera */
+    box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 15%);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.random-img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 1200px;
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.3);
+}
+
+.btn{
+    -webkit-backdrop-filter: blur(8px);
+    /* Safari 9+ */
+    backdrop-filter: blur(6px);
+    /* Chrome and Opera */
+    box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 15%);
+    background-color: rgba(228, 228, 228, 0.39);
+    border-radius: 9px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-family: monospace;
+    outline: rgba(255, 255, 255, 0.3);
+    border: 0px;
+    color: rgb(0, 72, 134);
+    width: 200px;
+    margin-bottom: 4%;
+    cursor: pointer;
+
+}
+
+.btn:hover{
+    background-color: rgba(228, 228, 228, 0.6);
+    box-shadow: 0 4px 4px rgba(0,0,0,0.3);
+    transition: all 1500 ease-in-out;
+    color:rgb(2, 81, 128);
+}
+
+.btn:disabled{
+    background-color: rgba(228, 228, 228, 0.6);
+    box-shadow: 0 4px 4px rgba(0,0,0,0.3);
+    transition: all 1500 ease-in-out;
+    color:rgb(2, 81, 128);
+    cursor: not-allowed;
+}
+
+.image-name{
+    -webkit-backdrop-filter: blur(8px);
+    /* Safari 9+ */
+    backdrop-filter: blur(6px);
+    /* Chrome and Opera */
+    box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 15%);
+    background-color: rgba(228, 228, 228, 0.39);
+    border-radius: 9px;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    font-family: monospace;
+    outline: rgba(255, 255, 255, 0.3);
+    border: 0px;
+    color: rgb(1, 68, 126);
+    width: 500px;
+    margin-bottom: 4%;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+}
+
+/* .image-container{
+    display: none;
+} */
+
+/* Add this to your existing CSS or your separate style.css file */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.hover-text {
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.hover-text:hover {
+    opacity: 0.8;
+}
