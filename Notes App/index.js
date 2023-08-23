@@ -1,4 +1,6 @@
-const btnel = document.getElementById("btn")
+const btnel = document.getElementById("btn");
+const appel = document.getElementById("app");
+
 
 function createnoteEl(id, content){
     const element = document.createElement("textarea")
@@ -11,14 +13,23 @@ function createnoteEl(id, content){
         if(warning){
             deletenote(id, content)
         }
-    })
+    });
 
-    element.addEventListener()
+    element.addEventListener("input", ()=>{
+        updatenote(id, element.value)
+    });
+    
+    return element;
 }
 
 function deletenote(){
 
 }
+
+function updatenote(){
+
+}
+
 
 function addnote(){
     const noteobj = {
@@ -26,5 +37,6 @@ function addnote(){
         content: "",
     };
     noteel = createnoteEl(noteobj.id, noteobj.content)
+    appel.insertBefore(noteel, btnel);
 }
 btnel.addEventListener("click", addnote);
