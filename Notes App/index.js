@@ -18,7 +18,7 @@ function createnoteEl(id, content){
     element.addEventListener("input", ()=>{
         updatenote(id, element.value)
     });
-    
+
     return element;
 }
 
@@ -32,11 +32,19 @@ function updatenote(){
 
 
 function addnote(){
+    const notes = [];
     const noteobj = {
         id: Math.floor(Math.random() * 100000),
         content: "",
     };
     noteel = createnoteEl(noteobj.id, noteobj.content)
     appel.insertBefore(noteel, btnel);
+
+    notes.push(noteobj);
+    savenote(notes);
+}
+
+function savenote(notes){
+    localStorage.setItem("note-app",JSON.stringify(notes));
 }
 btnel.addEventListener("click", addnote);
