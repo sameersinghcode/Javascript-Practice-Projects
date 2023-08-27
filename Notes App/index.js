@@ -31,7 +31,6 @@ function deletenote(id, content){
     const notes = getNotes();
     const target = notes.filter((note)=>note.id != id);
     savenote(target);
-    // appel.removeChild(element);
     location.reload();
 }
 
