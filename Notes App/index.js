@@ -54,11 +54,13 @@ function addnote(){
     notes.push(noteobj);
     savenote(notes);
 
+
 }
 
 function savenote(notes){
     localStorage.setItem("note-app",JSON.stringify(notes));
 }
+
 
 function getNotes(){
     return JSON.parse(localStorage.getItem("note-app") || "[]");
