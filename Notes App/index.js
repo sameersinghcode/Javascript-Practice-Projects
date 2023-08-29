@@ -53,8 +53,6 @@ function addnote(){
 
     notes.push(noteobj);
     savenote(notes);
-
-
 }
 
 function savenote(notes){
