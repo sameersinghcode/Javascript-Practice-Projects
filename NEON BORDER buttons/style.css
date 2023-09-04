@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background-color: rgb(19, 19, 19);    
+}
+
+.center{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.outer{
+    margin: 0 50px;
+    background: linear-gradient(#14ffe9,#ffeb3b,#ffeeee);
+
+}
