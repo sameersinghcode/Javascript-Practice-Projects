@@ -9,14 +9,17 @@ html,body{
     place-items: center;
     background-color: rgb(19, 19, 19);    
 }
+
 .center{
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
+
 .outer{
     margin: 0 50px;
     background: linear-gradient(#14ffe9,#ffeb3b,#ffeeee);
+    background-size: 200%;
 
 }
