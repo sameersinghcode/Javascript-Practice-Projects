@@ -5,7 +5,7 @@
 }
 html,body{
     display: grid;
-    height: 90%;
+    height: 100%;
     place-items: center;
     background-color: rgb(19, 19, 19);    
 }
@@ -19,7 +19,29 @@ html,body{
 
 .outer{
     margin: 0 50px;
-    background: linear-gradient(#14ffe9,#ffeb3b,#ffeeee);
-    background-size: 200%;
+    background: linear-gradient(#14ffe9,#ffeb3b,#ff0155);
 
+}
+
+.button{
+    height: 70px;
+    width: 220px;
+    border-radius: 50px;  
+}
+
+.circle{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    /* background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    cursor: pointer; */
+}
+
+.outer .button, .outer span{
+    position: absolute;
+    top: 50%;
 }
