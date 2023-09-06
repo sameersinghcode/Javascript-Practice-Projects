@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neumorphic Buttons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            background: #333;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 6px 6px 12px #1a1a1a, -6px -6px 12px #494949;
+            transition: transform 0.2s, box-shadow 0.2s;
+            color: #fff;
+        }
+
+        .button:hover {
+            transform: scale(1.05);
+            box-shadow: 8px 8px 16px #1a1a1a, -8px -8px 16px #494949;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button class="button">Button 1</button>
+        <button class="button">Button 2</button>
+    </div>
+</body>
+</html>

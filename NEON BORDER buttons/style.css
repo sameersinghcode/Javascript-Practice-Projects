@@ -17,12 +17,30 @@ html,body{
     justify-content: center;
 }
 
-.outer{
+/* .outer{
     position: relative;
     margin: 0 50px;
     background: linear-gradient(#ffb1e1,#c1fff9,#66c2ff,#ff0155);
 
+} */
+
+.outer {
+    position: relative;
+    margin: 0 50px;
+    background: linear-gradient(#ffb1e1, #c1fff9, #66c2ff, #ff0155);
+    background-size: 400% 100%; /* Create space for four gradient colors */
+    animation: gradientAnimation 10s linear infinite; /* Adjust the duration as needed */
 }
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
 
 .button{
     height: 70px;
@@ -58,6 +76,7 @@ html,body{
     background: rgb(17, 17, 17);
     color: azure;
     font-size: 20px;
+    z-index: 9;
     font-weight: 200;
     border: none;
     outline: none;
@@ -77,4 +96,39 @@ html,body{
     height: 180px;
     width: 180px;
     border-radius: 50%;
+}
+
+.outer span{
+    height: 100%;
+    width: 100%;
+    background: inherit;
+}
+
+.button span{
+    border-radius: 50px;
+}
+
+.circle span{
+    border-radius: 50%;
+}
+
+.outer:hover span:nth-child(1){
+    filter: blur(7px);
+}
+
+.outer:hover span:nth-child(2){
+    filter: blur(14px);
+}
+
+.outer:hover{
+    animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }      
 }
