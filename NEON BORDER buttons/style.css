@@ -103,23 +103,18 @@ html,body{
     width: 100%;
     background: inherit;
 }
-
 .button span{
     border-radius: 50px;
 }
-
 .circle span{
     border-radius: 50%;
 }
-
 .outer:hover span:nth-child(1){
     filter: blur(7px);
 }
-
 .outer:hover span:nth-child(2){
     filter: blur(14px);
 }
-
 .outer:hover{
     animation: rotate 1.5s linear infinite;
 }
@@ -131,5 +126,5 @@ html,body{
     100%{
         filter: hue-rotate(360deg);
     }    
-      
+
 }
