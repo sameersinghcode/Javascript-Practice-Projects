@@ -113,8 +113,9 @@ html,body{
     filter: blur(7px);
 }
 .outer:hover span:nth-child(2){
-    
+
     filter: blur(14px);
+    
 }
 .outer:hover{
     animation: rotate 1.5s linear infinite;
